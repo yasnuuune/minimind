@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<title>Quiz Leçon 1 – IA</title>
+<link rel="stylesheet" href="style.css">
+<script src="quiz1.js" defer></script>
+</head>
+<body data-lesson="1">
+
+<h1 class="titre">Quiz Leçon 1 : C'est quoi l'IA ?</h1>
+
+<div id="vies" style="text-align:center; font-size:2em;">❤️❤️❤️</div>
+
+<div class="question">
+    <p>1. L'IA peut reconnaître des visages ?</p>
+    <button onclick="verifier(true,this)">Oui</button>
+    <button onclick="verifier(false,this)">Non</button>
+</div>
+
+<div class="question">
+    <p>2. L'IA peut écrire des poèmes comme les humains ?</p>
+    <button onclick="verifier(true,this)">Oui</button>
+    <button onclick="verifier(false,this)">Non</button>
+</div>
+
+<div class="question">
+    <p>3. Une IA symbolique apprend toute seule en regardant des exemples ?</p>
+    <button onclick="verifier(false,this)">Oui</button>
+    <button onclick="verifier(true,this)">Non</button>
+</div>
+
+<div id="resultat" class="resultat"></div>
+
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Quiz Leçon 3 – Machine Learning interactif</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="quiz3.js" defer></script>
+  </head>
+  <body data-lesson="3">
+    <h1 class="titre">Quiz Leçon 3 : Apprentissage interactif</h1>
+
+    <div id="vies" style="text-align: center; font-size: 2em">❤️❤️❤️</div>
+
+    <div class="question">
+      <p>
+        1. L'ordinateur peut apprendre à reconnaître un animal si on lui montre
+        plusieurs images avec le nom correct ?
+      </p>
+      <button onclick="verifier(true,this)">Oui</button>
+      <button onclick="verifier(false,this)">Non</button>
+    </div>
+
+    <div class="question">
+      <p>
+        2. Il est inutile de montrer plusieurs images d’un même animal pour que
+        le modèle apprenne correctement ?
+      </p>
+      <button onclick="verifier(true,this)">Oui</button>
+      <button onclick="verifier(false,this)">Non</button>
+    </div>
+
+    <div class="question">
+      <p>
+        3. Étiqueter correctement les images aide le modèle à faire moins
+        d’erreurs plus tard ?
+      </p>
+      <button onclick="verifier(true,this)">Oui</button>
+      <button onclick="verifier(false,this)">Non</button>
+    </div>
+
+    <div class="question">
+      <p>
+        4. Si on met des noms incorrects sur les images, le modèle apprendra
+        correctement ?
+      </p>
+      <button onclick="verifier(true,this)">Oui</button>
+      <button onclick="verifier(false,this)">Non</button>
+    </div>
+
+    <div class="question">
+      <p>
+        5. Le modèle peut généraliser à de nouvelles images d’animaux s’il a été
+        entraîné correctement ?
+      </p>
+      <button onclick="verifier(true,this)">Oui</button>
+      <button onclick="verifier(false,this)">Non</button>
+    </div>
+
+    <div id="resultat" class="resultat"></div>
+  </body>
+</html>

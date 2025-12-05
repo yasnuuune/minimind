@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lesson 1</title>
+    <link rel="stylesheet" href="lesson.css" />
+  </head>
+  <body>
+    <div class="contenu-lecon">
+  <h1>Leçon 1 – Algorithme Min-Max</h1>
+  <p>Découvrez comment l’IA prend ses décisions dans un jeu simple :</p>
+
+  <!-- This is the container for the mini-game -->
+  <div id="demo-minmax" class="demo-container"></div>
+  <div id="winner-message" class="winner-message"></div>
+  <div id="minmax-explanation" style="margin-top:10px; padding:10px; border:1px solid #ccc;">
+  <strong>Minimax Explanation:</strong>
+  <div id="explanation-content">Play to see how AI thinks...</div>
+</div>
+
+  <button class="btn" onclick="terminerLecon(1)">
+    📜 Marquer la leçon terminée
+  </button>
+</div>
+    <div id="popup" class="modal">
+    <div class="modal-content">
+        <h2>Que voulez-vous faire ?</h2>
+        <button onclick="allerAuQuiz(1)">🧪 Faire le quiz</button>
+        <button onclick="allerAuxLecons()">🏛️ Retour aux leçons</button>
+        <span class="close" onclick="fermerPopup()">&times;</span>
+    </div>
+    </div>
+    <script src="progression.js" defer></script>
+    <script src="tictactoe.js" defer></script>
+  </body>
+</html>

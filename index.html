@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Académie Gauloise – Leçons IA</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="progression.js" defer ></script>
+    
+    
+
+</head>
+<body>
+    <nav class="navbar">
+    
+    <div class="theme-switcher">
+        <button onclick="changerTheme('light')">🌞 Light</button>
+        <button onclick="changerTheme('dark')">🌙 Dark</button>
+        <button onclick="changerTheme('colorblind')">🟦 Daltonien</button>
+    </div>
+</nav>
+<h1 class="titre">🏛️ Académie Gauloise – Technologies de l'I.A.</h1>
+
+
+<div class="search-container">
+    <input type="text" id="search-input" placeholder="🔍 Rechercher une leçon..." onkeyup="filtrerLecons()">
+</div>
+<div class="conteneur-cartes">
+    <div class="carte" id="lecon1" onclick="ouvrirLecon(1)">
+        <h2>Leçon 1 : Le minmax Algorithme ?</h2>
+        <p class="statut"></p>
+    </div>
+    <div class="carte" id="lecon2" onclick="ouvrirLecon(2)">
+        <h2>Leçon 2 : Machine Learning I</h2>
+        <p class="statut"></p>
+    </div>
+    <div class="carte" id="lecon3" onclick="ouvrirLecon(3)">
+        <h2>Leçon 3 : Machine Learning II</h2>
+        <p class="statut"></p>
+    </div>
+    <div class="carte" id="lecon4" onclick="ouvrirLecon(4)">
+        <h2>Leçon 4 : Petit Chatbot</h2>
+        <p class="statut"></p>
+    </div>
+    <div class="carte" id="lecon5" onclick="ouvrirLecon(5)">
+        <h2>Leçon 5 : IA Génératives</h2>
+        <p class="statut"></p>
+    </div>
+</div>
+<div class="dashboard">
+    <h2>📊 Progression de l'Académie</h2>
+    <div class="progress-container">
+        <div class="progress-bar" id="progress-bar"></div>
+    </div>
+    <p id="progress-text">0% des leçons terminées</p>
+</div>
+
+</body>
+</html>

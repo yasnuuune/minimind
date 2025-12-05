@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8" />
+    <title>Leçon 2</title>
+    <link rel="stylesheet" href="lesson.css" />
+    <script src="progress.js" defer></script>
+    <script src="lecon2.js" defer></script>
+</head>
+
+<body>
+
+<div class="contenu-lecon">
+
+    <h1>Leçon 2 – Machine Learning</h1>
+
+    <div class="demo-container" id="demo-devinette">
+
+        <div id="question"></div>
+        <label>Pour cet objet, quelle est la réponse à cette question :</label>
+        <div id="buttons">
+            <button id="yesBtn" class="btn">Oui</button>
+            <button id="noBtn" class="btn">Non</button>
+        </div>
+
+            <div>
+                
+            </div>
+            <button id="submitBtn" class="btn">Valider</button>
+
+    </div>
+
+</div> <!-- FIN contenu-lecon -->
+
+<button class="btn" onclick="terminerLecon(2)">
+    📜 Terminer cette leçon
+</button>
+
+<div id="popup" class="modal">
+    <div class="modal-content">
+        <h2>Que voulez-vous faire ?</h2>
+        <button onclick="allerAuQuiz(2)">🧪 Faire le quiz</button>
+        <button onclick="allerAuxLecons()">🏛️ Retour aux leçons</button>
+        <span class="close" onclick="fermerPopup()">&times;</span>
+    </div>
+</div>
+
+<script src="progression.js" defer></script>
+
+</body>
+</html>

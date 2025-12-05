@@ -1,0 +1,373 @@
+
+body{
+    background:#f4e4b2;font-family:"Trebuchet MS";margin:0;padding:0}
+.titre{
+    text-align:center;font-size:2.5em;color:#7c3f00;text-shadow:2px 2px #e6d39a;padding:20px}
+.conteneur-cartes{
+    display:flex;flex-wrap:wrap;justify-content:center;gap:20px;padding:20px}
+.carte{
+    width:250px;padding:20px;background:#fff3d1;border:4px solid #7c3f00;border-radius:15px;cursor:pointer;box-shadow:6px 6px 0 #7c3f00;transition:.2s}
+.carte:hover{
+    transform:scale(1.05)}
+    .carte.locked{
+        opacity:.5;cursor:not-allowed}
+.btn{
+    display:block;margin:30px auto;padding:15px 30px;background:#c0392b;color:#fff;border:none;border-radius:10px;font-size:1.2em;cursor:pointer}
+.question{
+    background:#fff3d1;padding:20px;margin:20px;border:3px solid #7c3f00;border-radius:10px}
+.resultat{
+    text-align:center;font-size:1.4em;margin-top:20px;display:none}
+
+    #vies {
+    margin: 20px auto;
+}
+
+.question {
+    background: #fff3d1;
+    border: 3px solid #7c3f00;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 15px auto;
+    max-width: 600px;
+}
+
+.question button {
+    margin: 10px 5px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    background: #d4a556;
+    color: white;
+    font-size: 1em;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.question button:hover {
+    background: #b98d40;
+    transform: scale(1.05);
+}
+.navbar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #c49a6c; /* couleur parchemin */
+    padding: 10px 20px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.navbar .logo {
+    font-family: 'Cinzel', serif;
+    font-size: 1.8em;
+    color: #7c4b1f;
+    text-shadow: 1px 1px #f3e0c1;
+}
+
+.navbar .theme-switcher button {
+    margin-left: 10px;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 10px;
+    background: #d4a556;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.navbar .theme-switcher button:hover {
+    background: #b98d40;
+    transform: scale(1.05);
+}
+
+/* Responsive small screens */
+@media (max-width: 500px){
+    .navbar {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .navbar .theme-switcher button {
+        margin-left: 0;
+    }
+}
+body.light {
+    --bg-color: #f4e4b2;
+    --text-color: #7c3f00;
+    --card-bg: #fff3d1;
+    --card-border: #7c3f00;
+}
+
+body.dark {
+    --bg-color: #2e2e2e;
+    --text-color: #f0e6d2;
+    --card-bg: #3e3e3e;
+    --card-border: #7c4b1f;
+}
+
+body.colorblind {
+    --bg-color: #e6f0ff;
+    --text-color: #003366;
+    --card-bg: #ffffff;
+    --card-border: #003366;
+}
+
+/* Appliquer ces variables */
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
+
+.carte {
+    background-color: var(--card-bg);
+    border-color: var(--card-border);
+}
+.dashboard {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #fff8e6;
+    border: 3px solid #c49a6c;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    text-align: center;
+}
+
+.progress-container {
+    width: 100%;
+    background: #f0e0c0;
+    border-radius: 12px;
+    height: 30px;
+    margin: 15px 0;
+    overflow: hidden;
+    box-shadow: inset 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.progress-bar {
+    height: 100%;
+    width: 0%;
+    background: #d4a556;
+    transition: width 0.5s ease-in-out;
+    border-radius: 12px;
+}
+.search-container {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#search-input {
+    width: 80%;
+    max-width: 400px;
+    padding: 10px 15px;
+    font-size: 16px;
+    border: 2px solid #c49a6c;
+    border-radius: 12px;
+    outline: none;
+    transition: 0.3s;
+}
+
+#search-input:focus {
+    border-color: #7c4b1f;
+    box-shadow: 0 0 5px rgba(124, 75, 31, 0.5);
+}
+
+/* ===== Projet Final – Assistant IA ===== */
+
+/* Hearts / Lives */
+#vies {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+/* Partie 1 – Image Classification */
+#image-game {
+    max-width: 800px;
+    margin: 20px auto;
+    background: #fff8e6;
+    border: 3px solid #c49a6c;
+    border-radius: 15px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 3px 3px 6px rgba(0,0,0,0.2);
+}
+
+#image-game img {
+    border: 3px solid #c49a6c;
+    border-radius: 12px;
+    box-shadow: 2px 2px 6px rgba(0,0,0,0.2);
+    margin-bottom: 15px;
+}
+
+#image-game input {
+    padding: 10px;
+    width: 60%;
+    font-size: 16px;
+    border-radius: 10px;
+    border: 2px solid #c49a6c;
+    margin-bottom: 10px;
+    box-shadow: inset 1px 1px 2px rgba(0,0,0,0.1);
+}
+
+#image-game button {
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 10px;
+    border: none;
+    background: #d4a556;
+    color: white;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+#image-game button:hover {
+    background: #b98d40;
+    transform: scale(1.05);
+}
+
+#feedbackAnimal {
+    margin-top: 15px;
+    font-weight: bold;
+    color: #7c4b1f;
+}
+
+/* Partie 2 – Chatbot */
+#chatbot-section {
+    max-width: 800px;
+    margin: 20px auto;
+    background: #fff8e6;
+    border: 3px solid #c49a6c;
+    border-radius: 15px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 3px 3px 6px rgba(0,0,0,0.2);
+}
+
+#chatWindow {
+    border: 2px solid #c49a6c;
+    border-radius: 12px;
+    padding: 10px;
+    height: 250px;
+    overflow-y: auto;
+    background: #fff3d1;
+    margin-bottom: 10px;
+}
+
+.chat-message {
+    margin: 5px 0;
+}
+
+.chat-user {
+    font-weight: bold;
+    color: #7c4b1f;
+}
+
+.chatbot {
+    font-weight: bold;
+    color: #c0392b;
+}
+
+#userInput {
+    width: 60%;
+    padding: 10px;
+    border-radius: 12px;
+    border: 2px solid #c49a6c;
+    font-size: 16px;
+    margin-right: 10px;
+}
+
+#sendBtn {
+    padding: 10px 20px;
+    border-radius: 12px;
+    border: none;
+    background: #d4a556;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+#sendBtn:hover {
+    background: #b98d40;
+    transform: scale(1.05);
+}
+
+/* Partie 3 – Quiz */
+#quiz {
+    max-width: 800px;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#quiz .question {
+    background: #fff8e6;
+    border: 3px solid #c49a6c;
+    border-radius: 15px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 3px 3px 6px rgba(0,0,0,0.2);
+}
+
+#quiz .question p {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #7c4b1f;
+}
+
+#quiz .question button {
+    background: #d4a556;
+    color: #fff;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 20px;
+    margin: 5px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+#quiz .question button:hover {
+    background: #b98d40;
+    transform: scale(1.05);
+}
+
+/* Résultat final */
+.resultat {
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-top: 20px;
+    color: #7c4b1f;
+}
+
+/* Responsive */
+@media (max-width: 500px) {
+    #image-game input,
+    #userInput,
+    #quiz .question button {
+        width: 80%;
+        margin: 8px auto;
+        display: block;
+    }
+}
+.contenu-lecon h2 {
+    color: #7c4b1f;
+    margin-top: 25px;
+    margin-bottom: 10px;
+    text-shadow: 1px 1px #f3e0c1;
+    font-family: 'Cinzel', serif;
+}
+
+.contenu-lecon ul {
+    margin-left: 20px;
+    color: #4b3621;
+    line-height: 1.5;
+}

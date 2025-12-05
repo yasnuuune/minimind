@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<title>Quiz Leçon 2 – Machine Learning</title>
+<link rel="stylesheet" href="style.css">
+<script src="quiz2.js" defer></script>
+</head>
+<body data-lesson="2">
+
+<h1 class="titre">Quiz Leçon 2 : Machine Learning</h1>
+
+<div id="vies" style="text-align:center; font-size:2em;">❤️❤️❤️</div>
+
+<!-- Questions -->
+<div class="question">
+    <p>1. Le Machine Learning permet à un ordinateur d'apprendre à partir de données ?</p>
+    <button onclick="verifier(true,this)">Oui</button>
+    <button onclick="verifier(false,this)">Non</button>
+</div>
+
+<div class="question">
+    <p>2. L'apprentissage supervisé nécessite des données étiquetées ?</p>
+    <button onclick="verifier(true,this)">Oui</button>
+    <button onclick="verifier(false,this)">Non</button>
+</div>
+
+<div class="question">
+    <p>3. L'apprentissage non supervisé sert à trouver des motifs dans les données ?</p>
+    <button onclick="verifier(true,this)">Oui</button>
+    <button onclick="verifier(false,this)">Non</button>
+</div>
+
+<div class="question">
+    <p>4. L'overfitting se produit quand un modèle est trop général et n'apprend rien ?</p>
+    <button onclick="verifier(false,this)">Oui</button>
+    <button onclick="verifier(true,this)">Non</button>
+</div>
+
+<div class="question">
+    <p>5. Un dataset est un ensemble de données utilisées pour entraîner un modèle ?</p>
+    <button onclick="verifier(true,this)">Oui</button>
+    <button onclick="verifier(false,this)">Non</button>
+</div>
+
+<div class="question">
+    <p>6. Un modèle ML est une structure qui apprend des données pour faire des prédictions ?</p>
+    <button onclick="verifier(true,this)">Oui</button>
+    <button onclick="verifier(false,this)">Non</button>
+</div>
+
+<div class="question">
+    <p>7. KNN est un algorithme utilisé pour la classification en Machine Learning ?</p>
+    <button onclick="verifier(true,this)">Oui</button>
+    <button onclick="verifier(false,this)">Non</button>
+</div>
+
+<div class="question">
+    <p>8. L'apprentissage par renforcement implique des récompenses ou punitions ?</p>
+    <button onclick="verifier(true,this)">Oui</button>
+    <button onclick="verifier(false,this)">Non</button>
+</div>
+
+<div class="question">
+    <p>9. Avant d'entraîner un modèle, il est important de nettoyer et préparer les données ?</p>
+    <button onclick="verifier(true,this)">Oui</button>
+    <button onclick="verifier(false,this)">Non</button>
+</div>
+
+<div class="question">
+    <p>10. Machine Learning et Intelligence Artificielle sont exactement la même chose ?</p>
+    <button onclick="verifier(false,this)">Oui</button>
+    <button onclick="verifier(true,this)">Non</button>
+</div>
+
+<div id="resultat" class="resultat"></div>
+
+</body>
+</html>

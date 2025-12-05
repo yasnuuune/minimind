@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Quiz Leçon 4 – Chatbot</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="quiz4.js" defer></script>
+  </head>
+  <body data-lesson="4">
+    <h1 class="titre">Quiz Leçon 4 : Chatbot et IA conversationnelle</h1>
+
+    <div id="vies" style="text-align: center; font-size: 2em">❤️❤️❤️</div>
+
+    <div class="question">
+      <p>
+        1. Un chatbot peut répondre correctement s’il a appris des exemples de
+        conversations ?
+      </p>
+      <button onclick="verifier(true,this)">Oui</button>
+      <button onclick="verifier(false,this)">Non</button>
+    </div>
+
+    <div class="question">
+      <p>
+        2. Si le chatbot n’a pas été entraîné, il peut toujours répondre
+        parfaitement à toutes les questions ?
+      </p>
+      <button onclick="verifier(true,this)">Oui</button>
+      <button onclick="verifier(false,this)">Non</button>
+    </div>
+
+    <div class="question">
+      <p>
+        3. Fournir des réponses variées et correctes améliore les performances
+        du chatbot ?
+      </p>
+      <button onclick="verifier(true,this)">Oui</button>
+      <button onclick="verifier(false,this)">Non</button>
+    </div>
+
+    <div class="question">
+      <p>
+        4. Le chatbot comprend exactement comme un humain sans exemples ou
+        règles ?
+      </p>
+      <button onclick="verifier(true,this)">Oui</button>
+      <button onclick="verifier(false,this)">Non</button>
+    </div>
+
+    <div class="question">
+      <p>
+        5. En ajustant ses réponses aux entrées de l’utilisateur, le chatbot
+        peut devenir plus utile ?
+      </p>
+      <button onclick="verifier(true,this)">Oui</button>
+      <button onclick="verifier(false,this)">Non</button>
+    </div>
+
+    <div id="resultat" class="resultat"></div>
+  </body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<title>Leçon 3 – Classification Visuelle</title>
+<link rel="stylesheet" href="lesson.css">
+</head>
+<body>
+<div class="contenu-lecon">
+    
+
+    <div id="imageArea">
+        <img id="currentImage" src="" alt="Image à classer">
+    </div>
+
+    <div id="categories">
+        <div class="clickable-div" data-category="Chat">Chat</div>
+        <div class="clickable-div" data-category="Chien">Chien</div>
+        <div class="clickable-div" data-category="Fruit">Fruit</div>
+        <div class="clickable-div" data-category="Poisson">Poisson</div>
+        <div class="clickable-div" data-category="Coccinelle">Coccinelle</div>
+    </div>
+
+    <div id="feedback"></div>
+</div>
+<button class="btn" onclick="terminerLecon(3)">
+      📜 Terminer cette leçon
+    </button>
+<div id="popup" class="modal">
+  <div class="modal-content">
+      <h2>Que voulez-vous faire ?</h2>
+      <button onclick="allerAuQuiz()">🧪 Faire le quiz</button>
+      <button onclick="allerAuxLecons()">🏛️ Retour aux leçons</button>
+      <span class="close" onclick="fermerPopup()">&times;</span>
+  </div>
+</div>
+<script src="lesson3.js" defer></script>
+<script src="progression.js" defer></script>
+</body>
+</html>

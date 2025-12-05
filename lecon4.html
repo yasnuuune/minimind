@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Leçon 4</title>
+    <link rel="stylesheet" href="lesson.css" />
+    <script src="progress.js" defer></script>
+  </head>
+  <body>
+    
+    <div class="contenu-lecon">
+      <h1 class="titre">Leçon 4 – Amuse-toi avec l'IA !</h1>
+      <div id="chatWindow">
+
+      </div>
+
+      <input type="text" id="userInput" placeholder="Écris quelque chose...">
+      <button id="sendBtn">Envoyer</button>
+    </div>
+    <script src="progression.js" defer></script>
+    <script src="lecon4.js" defer></script>
+    <button class="btn" onclick="terminerLecon(4)">
+      📜 Terminer cette leçon
+    </button>
+    <div id="popup" class="modal">
+    <div class="modal-content">
+        <h2>Que voulez-vous faire ?</h2>
+        <button onclick="allerAuQuiz(4)">🧪 Faire le quiz</button>
+        <button onclick="allerAuxLecons()">🏛️ Retour aux leçons</button>
+        <span class="close" onclick="fermerPopup()">&times;</span>
+    </div>
+    </div>
+  </body>
+</html>
