@@ -15,26 +15,6 @@ Le projet est conçu pour un usage pédagogique simple, permettant aux élèves 
 
 ---
 
-## Structure du projet
-
-```
-
-/projet-ia
-│
-├── index.html          # Page d'accueil ou leçon 1
-├── quiz2.html          # Leçon 2 – Machine Learning
-├── quiz3.html          # Leçon 3 – Classification visuelle
-├── quiz4.html          # Leçon 4 – Chatbot interactif
-├── quiz5.html          # Leçon 5 – Éducative
-│
-├── style.css           # Styles communs à toutes les leçons
-├── progression_ia.js   # Scripts pour la logique des quizzes
-└── README.md           # Ce fichier
-
-````
-
----
-
 ## Fonctionnalités
 
 - **Quizzes interactifs** avec boutons de réponse.
